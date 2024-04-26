@@ -1,0 +1,38 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "Account details",
+        "data": {
+          "account_sid": "Account SID",
+          "auth_token": "Auth token",
+          "from_number": "From number"
+        }
+      }
+    }
+  },
+  "services": {
+    "make_call": {
+      "name": "Make call",
+      "description": "Make a call using Twilio and TwiML code",
+      "fields": {
+        "from_number": {
+          "name": "From number",
+          "description": "The phone number to call from."
+        },
+        "target_number": {
+          "name": "Target number",
+          "description": "The phone number to be called."
+        },
+        "twiml_url": {
+          "name": "TwiML URL",
+          "description": "The URL of the TwiML code xml."
+        },
+        "twiml_method": {
+          "name": "TwiML method",
+          "description": "The http method used to access the code."
+        }
+      }
+    }
+  }
+}

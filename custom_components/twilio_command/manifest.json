@@ -1,0 +1,11 @@
+{
+  "domain": "twilio_command",
+  "name": "Twilio Command",
+  "codeowners": ["@jakemartin-icl"],
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/twilio_call",
+  "iot_class": "cloud_push",
+  "loggers": ["twilio"],
+  "requirements": ["twilio==6.32.0"],
+  "version": "1.0.0"
+}

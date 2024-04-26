@@ -1,0 +1,31 @@
+# Service ID
+make_call:
+  fields:
+    from_number:
+      required: true
+      selector:
+        config_entry:
+          integration: twilio_command
+    target_number:
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 9999999999999
+          step: 1
+          mode: box
+    twiml_url:
+      required: true
+      selector:
+        text:
+          type: url
+    twiml_method:
+      required: true
+      default: GET
+      selector:
+        select:
+          options:
+            - label: GET
+              value: GET
+            - label: POST
+              value: POST
